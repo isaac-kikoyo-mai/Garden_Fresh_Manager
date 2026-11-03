@@ -1,0 +1,215 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\inventory\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:inventory\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\templates\\sales\\sale_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\sales\\sale_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\templates\\reports\\financial_report.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\reports\\financial_report.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\templates\\dashboard\\dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\dashboard\\dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\reports\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:reports\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\templates\\inventory\\product_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\inventory\\product_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\dashboard\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dashboard\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\inventory\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:inventory\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\inventory\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:inventory\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\inventory\\forms.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:inventory\\forms.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "sale_list.html",
+              "DocumentMoniker": "C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\templates\\sales\\sale_list.html",
+              "RelativeDocumentMoniker": "templates\\sales\\sale_list.html",
+              "ToolTip": "C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\templates\\sales\\sale_list.html",
+              "RelativeToolTip": "templates\\sales\\sale_list.html",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwCQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-10-23T07:22:12.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "financial_report.html",
+              "DocumentMoniker": "C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\templates\\reports\\financial_report.html",
+              "RelativeDocumentMoniker": "templates\\reports\\financial_report.html",
+              "ToolTip": "C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\templates\\reports\\financial_report.html",
+              "RelativeToolTip": "templates\\reports\\financial_report.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-10-23T07:16:54.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "views.py",
+              "DocumentMoniker": "C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\reports\\views.py",
+              "RelativeDocumentMoniker": "reports\\views.py",
+              "ToolTip": "C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\reports\\views.py",
+              "RelativeToolTip": "reports\\views.py",
+              "ViewState": "AgIAADAAAAAAAAAAAADwv0YAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-10-23T07:14:54.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "views.py",
+              "DocumentMoniker": "C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\dashboard\\views.py",
+              "RelativeDocumentMoniker": "dashboard\\views.py",
+              "ToolTip": "C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\dashboard\\views.py",
+              "RelativeToolTip": "dashboard\\views.py",
+              "ViewState": "AgIAACQAAAAAAAAAAADwvygAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-10-23T06:56:02.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "models.py",
+              "DocumentMoniker": "C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\inventory\\models.py",
+              "RelativeDocumentMoniker": "inventory\\models.py",
+              "ToolTip": "C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\inventory\\models.py",
+              "RelativeToolTip": "inventory\\models.py",
+              "ViewState": "AgIAACYAAAAAAAAAAADwv18AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-10-23T06:34:28.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "product_list.html",
+              "DocumentMoniker": "C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\templates\\inventory\\product_list.html",
+              "RelativeDocumentMoniker": "templates\\inventory\\product_list.html",
+              "ToolTip": "C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\templates\\inventory\\product_list.html",
+              "RelativeToolTip": "templates\\inventory\\product_list.html",
+              "ViewState": "AgIAADsAAAAAAAAAAAAYwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-10-23T06:32:08.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "urls.py",
+              "DocumentMoniker": "C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\inventory\\urls.py",
+              "RelativeDocumentMoniker": "inventory\\urls.py",
+              "ToolTip": "C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\inventory\\urls.py",
+              "RelativeToolTip": "inventory\\urls.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-10-23T06:30:33.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "views.py",
+              "DocumentMoniker": "C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\inventory\\views.py",
+              "RelativeDocumentMoniker": "inventory\\views.py",
+              "ToolTip": "C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\inventory\\views.py",
+              "RelativeToolTip": "inventory\\views.py",
+              "ViewState": "AgIAADAAAAAAAAAAAADwv0YAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-10-23T06:29:33.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "forms.py",
+              "DocumentMoniker": "C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\inventory\\forms.py",
+              "RelativeDocumentMoniker": "inventory\\forms.py",
+              "ToolTip": "C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\inventory\\forms.py",
+              "RelativeToolTip": "inventory\\forms.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-10-23T06:28:58.167Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "d062e6b0-52c0-46b3-874f-17daba965970",
+        "Display": 0,
+        "X": -5,
+        "Y": 153,
+        "Width": 1930,
+        "Height": 884,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dashboard.html",
+              "DocumentMoniker": "C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\templates\\dashboard\\dashboard.html",
+              "RelativeDocumentMoniker": "templates\\dashboard\\dashboard.html",
+              "ToolTip": "C:\\Users\\isaac.kikoyo\\Documents\\Django project\\Garden_Fresh_Food_Mart\\Garden_Fresh_Food_Mart\\templates\\dashboard\\dashboard.html",
+              "RelativeToolTip": "templates\\dashboard\\dashboard.html",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAADkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-10-23T06:57:10.113Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

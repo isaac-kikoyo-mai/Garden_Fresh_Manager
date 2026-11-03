@@ -1,0 +1,172 @@
+﻿{% extends 'base.html' %}
+
+{% block content %}
+
+<h2 class="mb-4">
+    Garden Fresh Manager Dashboard
+</h2>
+
+<div class="row">
+
+    <div class="col-md-3 mb-3">
+        <div class="card bg-primary text-white">
+            <div class="card-body">
+                <h6>Total Products</h6>
+                <h3>{{ product_count }}</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <h6>Total Investment</h6>
+                <h3>UGX {{ total_investment }}</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <div class="card bg-success text-white">
+            <div class="card-body">
+                <h6>Revenue Collected</h6>
+                <h3>UGX {{ total_revenue }}</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <div class="card bg-warning">
+            <div class="card-body">
+                <h6>Outstanding Recovery</h6>
+                <h3>UGX {{ remaining_recovery }}</h3>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-md-4 mb-3">
+        <div class="card bg-success text-white">
+            <div class="card-body">
+                <h6>Total Profit</h6>
+                <h3>UGX {{ total_profit }}</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <div class="card bg-danger text-white">
+            <div class="card-body">
+                <h6>Total Expenses</h6>
+                <h3>UGX {{ expenses }}</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <div class="card bg-dark text-white">
+            <div class="card-body">
+                <h6>Net Profit</h6>
+                <h3>UGX {{ net_profit }}</h3>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<h3 class="mt-4">
+    Product Performance
+</h3>
+
+<table class="table table-bordered table-striped">
+
+    <thead class="table-dark">
+        <tr>
+            <th>Product</th>
+            <th>Investment</th>
+            <th>Revenue</th>
+            <th>Recovery %</th>
+            <th>Outstanding Recovery</th>
+            <th>Profit</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        {% for product in products %}
+
+        <tr>
+
+            <td>
+                {{ product.name }}
+            </td>
+
+            <td>
+                UGX {{ product.total_investment }}
+            </td>
+
+            <td>
+                UGX {{ product.total_sales }}
+            </td>
+
+            <td>
+                {{ product.recovery_percentage }}%
+            </td>
+
+            <td>
+                UGX {{ product.remaining_recovery }}
+            </td>
+
+            <td>
+                UGX {{ product.profit }}
+            </td>
+
+            <td>
+
+                {% if product.stock_status == "IN_STOCK" %}
+                <span class="badge bg-success">
+                    In Stock
+                </span>
+
+                {% elif product.stock_status == "LOW_STOCK" %}
+                <span class="badge bg-warning text-dark">
+                    Low Stock
+                </span>
+
+                {% elif product.stock_status == "REORDER" %}
+                <span class="badge bg-danger">
+                    Reorder Needed
+                </span>
+
+                {% else %}
+                <span class="badge bg-primary">
+                    Profitable
+                </span>
+                {% endif %}
+
+            </td>
+
+        </tr>
+
+        {% empty %}
+
+        <tr>
+            <td colspan="7" class="text-center">
+                No products found.
+            </td>
+        </tr>
+
+        {% endfor %}
+
+    </tbody>
+
+</table>
+    </tbody>
+
+</table>
+
+{% endblock %}

@@ -1,0 +1,226 @@
+﻿{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Garden Fresh Manager</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          rel="stylesheet">
+
+    <style>
+
+        body {
+            background-color: #f5f7fa;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .nav-link {
+            border-radius: 8px;
+            margin: 0 3px;
+            transition: 0.3s;
+        }
+
+            .nav-link:hover {
+                background: rgba(255,255,255,0.15);
+            }
+
+            .nav-link.active {
+                background: white;
+                color: #198754 !important;
+                font-weight: 600;
+            }
+
+        .user-badge {
+            background: rgba(255,255,255,0.15);
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+
+        .page-container {
+            padding: 20px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 12px;
+        }
+
+        @media (max-width: 991px) {
+
+            .user-section {
+                margin-top: 15px;
+            }
+
+            .logout-btn {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand"
+               href="{% url 'home' %}">
+                🌱 Garden Fresh
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse"
+                 id="navbarNav">
+
+                <ul class="navbar-nav me-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link {% if '/home/' in request.path %}active{% endif %}"
+                           href="{% url 'home' %}">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link {% if '/products/' in request.path %}active{% endif %}"
+                           href="{% url 'product_list' %}">
+                            <i class="fas fa-box"></i>
+                            Products
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link {% if '/sales/' in request.path %}active{% endif %}"
+                           href="{% url 'sale_list' %}">
+                            <i class="fas fa-cart-shopping"></i>
+                            Sales
+                        </a>
+                    </li>
+
+                    {% if request.user.is_authenticated %}
+
+                    {% for group in request.user.groups.all %}
+
+                    {% if group.name == 'Manager' %}
+
+                    <li class="nav-item">
+                        <a class="nav-link {% if '/dashboard/' in request.path or request.path == '/' %}active{% endif %}"
+                           href="{% url 'dashboard' %}">
+                            <i class="fas fa-chart-line"></i>
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link {% if '/reports/' in request.path %}active{% endif %}"
+                           href="{% url 'financial_report' %}">
+                            <i class="fas fa-file-lines"></i>
+                            Reports
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link {% if '/expenses/' in request.path %}active{% endif %}"
+                           href="{% url 'expense_list' %}">
+                            <i class="fas fa-money-bill-wave"></i>
+                            Expenses
+                        </a>
+                    </li>
+
+                    {% endif %}
+
+                    {% endfor %}
+
+                    {% endif %}
+
+                </ul>
+
+                {% if request.user.is_authenticated %}
+
+                <div class="d-flex flex-column flex-lg-row align-items-lg-center user-section">
+
+                    <div class="user-badge text-white me-lg-3 mb-2 mb-lg-0">
+
+                        <i class="fas fa-user-circle"></i>
+
+                        {% if request.user.get_full_name %}
+                        {{ request.user.get_full_name }}
+                        {% else %}
+                        {{ request.user.username }}
+                        {% endif %}
+
+                        {% for group in request.user.groups.all %}
+                        <span class="badge bg-light text-success ms-1">
+                            {{ group.name }}
+                        </span>
+                        {% endfor %}
+
+                    </div>
+
+                    <a href="{% url 'logout' %}"
+                       class="btn btn-light logout-btn">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </a>
+
+                </div>
+
+                {% endif %}
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div class="container-fluid page-container">
+
+        {% if messages %}
+
+        {% for message in messages %}
+
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show">
+
+            {{ message }}
+
+            <button type="button"
+                    class="btn-close"
+                    data-bs-dismiss="alert">
+            </button>
+
+        </div>
+
+        {% endfor %}
+
+        {% endif %}
+
+        {% block content %}
+        {% endblock %}
+
+    </div>
+
+    <script src=" https: //cdn.jsdelivr.net

@@ -1,0 +1,134 @@
+﻿{% extends 'base.html' %}
+
+{% block content %}
+
+<h3 class="mb-4">
+    Welcome {{ request.user.username }}
+</h3>
+
+<div class="row g-3">
+
+    <div class="col-6">
+
+        <a href="{% url 'sale_list' %}"
+           class="text-decoration-none">
+
+            <div class="card bg-success text-white">
+
+                <div class="card-body text-center">
+
+                    <h1>🛒</h1>
+
+                    <h5>Sales</h5>
+
+                    <small>
+                        {{ sales_count }} Records
+                    </small>
+
+                </div>
+
+            </div>
+
+        </a>
+
+    </div>
+
+    <div class="col-6">
+
+        <a href="{% url 'product_list' %}"
+           class="text-decoration-none">
+
+            <div class="card bg-primary text-white">
+
+                <div class="card-body text-center">
+
+                    <h1>📦</h1>
+
+                    <h5>Products</h5>
+
+                    <small>
+                        {{ products_count }}
+                    </small>
+
+                </div>
+
+            </div>
+
+        </a>
+
+    </div>
+
+    <div class="col-6">
+
+        <a href="{% url 'expense_list' %}"
+           class="text-decoration-none">
+
+            <div class="card bg-danger text-white">
+
+                <div class="card-body text-center">
+
+                    <h1>💰</h1>
+
+                    <h5>Expenses</h5>
+
+                    <small>
+                        {{ expenses_count }}
+                    </small>
+
+                </div>
+
+            </div>
+
+        </a>
+
+    </div>
+
+    {% if request.user.groups.all.0.name == 'Manager' %}
+
+    <div class="col-6">
+
+        <a href="{% url 'dashboard' %}"
+           class="text-decoration-none">
+
+            <div class="card bg-dark text-white">
+
+                <div class="card-body text-center">
+
+                    <h1>📊</h1>
+
+                    <h5>Dashboard</h5>
+
+                </div>
+
+            </div>
+
+        </a>
+
+    </div>
+
+    <div class="col-6">
+
+        <a href="{% url 'financial_report' %}"
+           class="text-decoration-none">
+
+            <div class="card bg-info text-white">
+
+                <div class="card-body text-center">
+
+                    <h1>📈</h1>
+
+                    <h5>Reports</h5>
+
+                </div>
+
+            </div>
+
+        </a>
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+{% endblock %}

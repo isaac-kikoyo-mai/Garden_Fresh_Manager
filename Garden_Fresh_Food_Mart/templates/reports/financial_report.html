@@ -1,0 +1,191 @@
+﻿{% extends 'base.html' %}
+
+{% block content %}
+
+<h2 class="mb-4">
+    Financial Report
+</h2>
+
+<form method="GET">
+
+    <div class="row mb-3">
+
+        <div class="col-md-4">
+
+            <label>Start Date</label>
+
+            <input type="date"
+                   name="start_date"
+                   class="form-control"
+                   value="{{ request.GET.start_date }}">
+
+        </div>
+
+        <div class="col-md-4">
+
+            <label>End Date</label>
+
+            <input type="date"
+                   name="end_date"
+                   class="form-control"
+                   value="{{ request.GET.end_date }}">
+
+        </div>
+
+        <div class="col-md-4">
+
+            <label>&nbsp;</label>
+
+            <button class="btn btn-success form-control"
+                    type="submit">
+
+                Generate Report
+
+            </button>
+
+        </div>
+
+    </div>
+
+</form>
+
+{% if revenue %}
+
+<div class="row mb-4">
+
+    <div class="col-md-2">
+
+        <div class="card bg-primary text-white">
+
+            <div class="card-body">
+
+                <h6>Revenue</h6>
+
+                <h4>
+                    UGX {{ revenue }}
+                </h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-2">
+
+        <div class="card bg-secondary text-white">
+
+            <div class="card-body">
+
+                <h6>Cost</h6>
+
+                <h4>
+                    UGX {{ cost }}
+                </h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-2">
+
+        <div class="card bg-success text-white">
+
+            <div class="card-body">
+
+                <h6>Gross Profit</h6>
+
+                <h4>
+                    UGX {{ profit }}
+                </h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="card bg-warning">
+
+            <div class="card-body">
+
+                <h6>Expenses</h6>
+
+                <h4>
+                    UGX {{ expenses }}
+                </h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="card bg-danger text-white">
+
+            <div class="card-body">
+
+                <h6>Net Profit</h6>
+
+                <h4>
+                    UGX {{ net_profit }}
+                </h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endif %}
+
+<table class="table table-striped">
+
+    <thead>
+
+        <tr>
+            <th>Date</th>
+            <th>Product</th>
+            <th>Amount</th>
+            <th>Customer</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        {% for sale in sales %}
+
+        <tr>
+
+            <td>{{ sale.sale_date|date:"d M Y" }}</td>
+            <td>{{ sale.product.name }}</td>
+            <td>UGX {{ sale.amount }}</td>
+            <td>{{ sale.customer_name }}</td>
+
+        </tr>
+
+        {% empty %}
+
+        <tr>
+            <td colspan="6">
+                No records found.
+            </td>
+        </tr>
+
+        {% endfor %}
+
+    </tbody>
+
+</table>
+
+{% endblock %}

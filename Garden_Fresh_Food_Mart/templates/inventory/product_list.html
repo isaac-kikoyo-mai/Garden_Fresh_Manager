@@ -1,0 +1,83 @@
+﻿{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Products</h2>
+
+<div class="mb-3">
+
+    <a href="{% url 'add_product' %}"
+       class="btn btn-success">
+        Add Product
+    </a>
+
+</div>
+
+<table class="table table-bordered table-striped">
+
+    <thead class="table-dark">
+        <tr>
+            <th>Name</th>
+            <th>Buying Price</th>
+            <th>Selling Price</th>
+            <th>Total Sales</th>
+            <th>Profit</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        {% for product in products %}
+
+        <tr>
+
+            <td>{{ product.name }}</td>
+
+            <td>
+                UGX {{ product.buying_price }}
+            </td>
+
+            <td>
+                UGX {{ product.selling_price }}
+            </td>
+
+            <td>
+                UGX {{ product.total_sales }}
+            </td>
+
+            <td>
+                UGX {{ product.profit }}
+            </td>
+
+            <td>
+                {{ product.stock_status }}
+            </td>
+
+            <td>
+
+                <a href="{% url 'restock_product' product.id %}"
+                   class="btn btn-warning btn-sm">
+                    Restock
+                </a>
+
+            </td>
+
+        </tr>
+
+        {% empty %}
+
+        <tr>
+            <td colspan="7" class="text-center">
+                No Products Available
+            </td>
+        </tr>
+
+        {% endfor %}
+
+    </tbody>
+
+</table>
+
+{% endblock %}

@@ -1,0 +1,39 @@
+﻿{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>
+    Restock {{ product.name }}
+</h2>
+
+<div class="card">
+
+    <div class="card-body">
+
+        <p>
+            Current Investment:
+            <strong>
+                UGX {{ product.buying_price }}
+            </strong>
+        </p>
+
+        <form method="POST">
+
+            {% csrf_token %}
+
+            {{ form.as_p }}
+
+            <button type="submit"
+                    class="btn btn-success">
+
+                Add Investment
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+{% endblock %}
